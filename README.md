@@ -35,7 +35,7 @@ In testing and development environments, you can use automated convenience scrip
 Before you install Docker Engine for the first time on a new host machine, you need to set up the Docker repository. Afterward, you can install and update Docker from the repository. </sub>
   
   
-##Set up the repository
+## Set up the repository
 
 Install the yum-utils package (which provides the yum-config-manager utility) and set up the repository.
 
