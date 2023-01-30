@@ -16,18 +16,20 @@ Archived versions aren’t supported or tested.
 
 ## Images, containers, volumes, and networks stored in /var/lib/docker/ aren’t automatically removed when you uninstall Docker.
 
-<sub>It’s OK if yum reports that none of these packages are installed.
+It’s OK if yum reports that none of these packages are installed.
 Images, containers, volumes, and networks stored in /var/lib/docker/ aren’t automatically removed when you uninstall Docker.
 Installation methods
 You can install Docker Engine in different ways, depending on your needs:
 You can set up Docker’s repositories and install from them, for ease of installation and upgrade tasks. This is the recommended approach.
 You can download the RPM package and install it manually and manage upgrades completely manually. This is useful in situations such as installing Docker on air-gapped systems with no access to the internet.
-<sub>In testing and development environments, you can use automated convenience scripts to install Docker.
+In testing and development environments, you can use automated convenience scripts to install Docker.
+  
 ##Install using the repository
 Before you install Docker Engine for the first time on a new host machine, you need to set up the Docker repository. Afterward, you can install and update Docker from the repository. </sub>
   
   
 ##Set up the repository
+
 Install the yum-utils package (which provides the yum-config-manager utility) and set up the repository.
 
 **sudo yum install -y yum-utils**
