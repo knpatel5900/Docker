@@ -23,13 +23,14 @@ _Older versions of Docker went by the names of docker or docker-engine. Uninstal
                   docker-logrotate \
                   docker-engine 
 
-## Images, containers, volumes, and networks stored in /var/lib/docker/ aren’t automatically removed when you uninstall Docker.
+**Images, containers, volumes, and networks stored in /var/lib/docker/ aren’t automatically removed when you uninstall Docker**
 
-_It’s OK if yum reports that none of these packages are installed.
-Images, containers, volumes, and networks stored in /var/lib/docker/ aren’t automatically removed when you uninstall Docker.
-Installation methods
+_It"s OK if yum reports that none of these packages are installed._
 
-_You can install Docker Engine in different ways, depending on your needs:_
+_Images, containers, volumes, and networks stored in /var/lib/docker/ aren’t automatically removed when you uninstall Docker.
+Installation methods_
+
+**You can install Docker Engine in different ways, depending on your needs:**
 
 _You can set up Docker’s repositories and install from them, for ease of installation and upgrade tasks. This is the recommended approach._
 _You can download the RPM package and install it manually and manage upgrades completely manually. This is useful in situations such as installing Docker on air-gapped systems with no access to the internet._
@@ -52,8 +53,8 @@ To install the latest version, run:
 
         sudo yum install docker-ce docker-ce-cli containerd.io docker-compose-plugin
         
-_ _If prompted to accept the GPG key, verify that the fingerprint matches 060A 61C5 1B55 8A7F 742B 77AA C52F EB6B 621E 9F35, and if so, accept it.
-This command installs Docker, but it doesn’t start Docker. It also creates a docker group, however, it doesn’t add any users to the group by default._ _
+_If prompted to accept the GPG key, verify that the fingerprint matches 060A 61C5 1B55 8A7F 742B 77AA C52F EB6B 621E 9F35, and if so, accept it.
+This command installs Docker, but it doesn’t start Docker. It also creates a docker group, however, it doesn’t add any users to the group by default._
 
 ## Install using the convenience script
 
