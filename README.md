@@ -1,6 +1,9 @@
 # Install Docker Engine on CentOS
 To get started with Docker Engine on CentOS, make sure you meet the prerequisites, then install Docker.
-https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.globenewswire.com%2Fen%2Fnews-release%2F2022%2F03%2F31%2F2414082%2F0%2Fen%2FDocker-Raises-105-Million-to-Accelerate-Investments-in-Developer-Productivity-Trusted-Content-and-Ecosystem-Partnerships.html&psig=AOvVaw1f_7_KWKcVNrtnylfsnzqD&ust=1675145090454000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCOjJr_PP7vwCFQAAAAAdAAAAABAD
+
+![Set Up Docker in CentOS]([https://raw.githubusercontent.com/miztiik/setup-aws-code-commit/master/images/SSH%20Connections%20to%20AWS%20CodeCommit%20Repositories.png](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.globenewswire.com%2Fen%2Fnews-release%2F2022%2F03%2F31%2F2414082%2F0%2Fen%2FDocker-Raises-105-Million-to-Accelerate-Investments-in-Developer-Productivity-Trusted-Content-and-Ecosystem-Partnerships.html&psig=AOvVaw1f_7_KWKcVNrtnylfsnzqD&ust=1675145090454000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCOjJr_PP7vwCFQAAAAAdAAAAABAD))
+
+
 ## Prerequisites
 OS requirements
 To install Docker Engine, you need a maintained version of one of the following CentOS versions:
