@@ -27,8 +27,7 @@ _Older versions of Docker went by the names of docker or docker-engine. Uninstal
 
 _It"s OK if yum reports that none of these packages are installed._
 
-_Images, containers, volumes, and networks stored in /var/lib/docker/ aren’t automatically removed when you uninstall Docker.
-Installation methods_
+**Images, containers, volumes, and networks stored in /var/lib/docker/ aren’t automatically removed when you uninstall Docker.**
 
 **You can install Docker Engine in different ways, depending on your needs:**
 
