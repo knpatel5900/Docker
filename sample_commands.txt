@@ -87,13 +87,13 @@ net.ipv4.ip_forward = 1
 clear
 docker run --name kp-centos -d --it  --net kp_network centos sh
 docker network ls
-docker run  -itd --name=centbhai --network=kp_network centos
+docker run  -itd --name=centb --network=kp_network centos
 docker network ls
 docker network  ls 
 docker network  inspect e22d2706257c
 docker run  -itd --name=centkumar --network=kp_network centos
 docker network  inspect e22d2706257c
-docker attach centbhai
+docker attach centb
 docker attach centkumar
 docker ps -a
 docker info
@@ -109,19 +109,19 @@ docker network ls
 docker network inspect e22d2706257c
 docker container ls
 docker container ls -a
-docker container attach centbhai
+docker container attach centb
 docker run  -itd --name=centkumar --network=kp_network centos
 docker run  -itd centkumar
 docke attach centkumar
 docker attach centkumar
-docker run  --name=centbhai 
-docker run  --name centbhai 
+docker run  --name=centb 
+docker run  --name centb 
 docker container ls
 docker container ls -a
 docker attch centkumar
 docker container attch centkumar
-docker attach centbhai
-docker start  centbhai
+docker attach centb
+docker start  centb
 docker start  centkumar 
 docker network inspect kp_network 
 cleR
@@ -129,9 +129,9 @@ celar
 clear
 celar
 clear
-docker attach centbhai 
+docker attach centb 
 clear
-docker attach centbhai 
+docker attach centb 
 clear
 docker ps
 docker ps -a
@@ -149,19 +149,19 @@ docker stop d9d12b1695e2
 docker ps -a
 clear
 docker ps -a
-docker start centbhai centkumar 
-docker inspect centbhai
-docker inspect centbhai centkumar 
-docker inspect centbhai
+docker start centb centkumar 
+docker inspect centb
+docker inspect centb centkumar 
+docker inspect centb
 docker inspect centkumar 
 clear
-docker stop centbhai centkumar 
-docker start centbhai centkumar 
+docker stop centb centkumar 
+docker start centb centkumar 
 docker inspect centkumar 
-docker stop centbhai centkumar 
-docker start centkumar  centbhai 
+docker stop centb centkumar 
+docker start centkumar  centb 
 docker inspect centkumar 
-docker inspect centbhai
+docker inspect centb
 docker pull ubuntu
 docker image
 docker images
@@ -169,7 +169,7 @@ docker run -idt --name=ubuntutest --network=kp_network ubuntu sh
 docker inspect ubuntutest 
 docker attach ubuntutest 
 clear
-docker attach centbhai 
+docker attach centb 
 clear
 docker attach ubuntutest 
 clear
@@ -195,7 +195,7 @@ docker run -itb name=ul ubuntu
 docker run -idt --name=ubuntutest ubuntu 
 docker start ubuntutest
 docker attach ubuntutest 
-docker attach centbhai 
+docker attach centb 
 docker image 
 docker images
 docker container ps 
@@ -210,7 +210,7 @@ docker container ps
 docker container ps -a
 docker network create --driver bridge --subnet 192.168.57.0/24 --gateway 192.168.57.1/24
 docker stop all
-docker stop centbhai 
+docker stop centb 
 docker stop centkumar
 docker network create --driver bridge --subnet 192.168.57.0/24 --gateway 192.168.57.1/24
 docker network create --driver bridge --subnet 192.168.57.0/24 --gateway 192.168.57.1
@@ -220,15 +220,15 @@ docker network create --driver=bridge --subnet 192.168.57.0/24 --gateway 192.168
 docker network create --driver=bridge --subnet 192.168.57.0/24 --gateway 192.168.57.1 bro
 docker ps 
 docker ps -a
-docker container start centbhai 
-docker run -ibt --name=centbhai centos
-docker run -it --name=centbhai centos
-docker stop centbhai
+docker container start centb 
+docker run -ibt --name=centb centos
+docker run -it --name=centb centos
+docker stop centb
 docker stop centkumar
 docker start centkumar
 docker network inspect kp_network 
-docker container start centbhai 
-docker  start centbhai 
+docker container start centb 
+docker  start centb 
 docker network inspect kp_network 
 docker  start centkumar
 docker network ls
@@ -238,7 +238,7 @@ docker exec -idt centkumar centos
 docker network prune 
 docker run --name centkumar -it centos
 docker start centkumar
-docker container rm centbhai 
+docker container rm centb 
 docker container rm centkumar 
 history 
 docker ps -a
@@ -269,9 +269,9 @@ ping 192.168.57.10
 clear
 docker
 docker network 192.168.57.22/24
-docker network connect --ip 192.168.57.22 bro centbhai 
-docker start centbhai 
-docker attach  centbhai 
+docker network connect --ip 192.168.57.22 bro centb 
+docker start centb 
+docker attach  centb 
 clear
 docker start centkumanr
 docker start centkumar
@@ -279,15 +279,15 @@ docker container ps -a
 docker start centkumar 
 docker network ps -a
 docker network ls
-docker stop centbhai 
+docker stop centb 
 docker network rm bro `
 docker network rm bro 
 docker network ls
 clear
-docker start centbhai
+docker start centb
 docker start centkumar
 docker container ps -a
-docker run -idt --name=centbhai centos
+docker run -idt --name=centb centos
 systemctl restart network
 nmcli con sh
 firefox
@@ -344,7 +344,15 @@ ll
 clear
 docker run -e WORDPRESS_DB_PASSWORD=root123 -d --name wordpress --link wordpressdb:mysql wordpress
 docker run wordpress
+clear
 docker ps
+celsr
+clear
 cd
 mkdir wordpress
-
+ll
+vi docker-compose.yml 
+cd wordpress/
+ll
+vi docker-compose.yml
+docker-compose up -d
