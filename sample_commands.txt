@@ -1,0 +1,350 @@
+docker info
+docker -version
+docker --version 
+docker images
+docker info
+docker infodocker ps -a
+docker ps -a
+cler
+cleqr
+clear
+docker network --help
+docker network ls
+docker network inspect kp_network
+docker network create kp_network
+docker network ls
+docker network inspect kp_network
+clear
+docker container ls
+docker container ls -a
+docker network inspect kp_network
+docker run --name kp-centos -d --it --net kp_network centos sh
+docker run --name kp-centos -d  --net kp_network centos sh
+docker network inspect kp_network
+docker container ls -a
+exit
+clear
+mount -a
+mount /dev/sr0 /mnt/
+df
+clear
+yum install docker
+docker images
+docker run centos /bin/echo "Welcome to the Docker World"
+clear
+docker container ls -a
+docker network ls
+docker container kill 684f6416f2b9
+docker container delete 684f6416f2b9
+docker container stop 684f6416f2b9
+docker network ls
+docker container ls -a
+docker info
+clear
+docke images
+docker images
+celar
+clear
+docker images
+docker container ls -a
+docker rmi 684f6416f2b9
+docker rmi kp-centos
+docker rm 684f6416f2b9
+docker container ls -a
+clear
+docker build 
+clear
+docker container ls -a
+iptables -t nat -L
+docker inspect d8f45d34984b
+docker run --name kp-centos -d  --net kp_network centos sh
+docker container ls -a
+docker inspect ef87407ffc50
+docker rm ef87407ffc50
+docker ps
+docker ps -a
+docker container la -a
+docker container ls -a
+clear
+docker run --name kp-centos -d --it --net kp_network centos sh
+docker ru --help
+docker run --help
+docker run --name --help
+docker run --it --name --centos_1 --network=kp_network centos sh
+docker run --name kp-centos  --itd --net kp_network centos sh
+docker run -itd --name=kp_cent centos sh
+docker network ls
+docker network  inspect e22d2706257c
+docker run --name kp-centos  --it --d --net kp_network centos sh
+docker run --name kp-centos   --d --net kp_network centos sh
+docker run --name kp-centos --d  --net kp_network centos sh
+docker run --name kp-centos -d  --net kp_network centos sh
+docker network  inspect e22d2706257c
+vi /etc/sysctl.conf 
+systemctl restart network
+sysctl net.ipv4.ip_forward
+net.ipv4.ip_forward = 1
+clear
+docker run --name kp-centos -d --it  --net kp_network centos sh
+docker network ls
+docker run  -itd --name=centbhai --network=kp_network centos
+docker network ls
+docker network  ls 
+docker network  inspect e22d2706257c
+docker run  -itd --name=centkumar --network=kp_network centos
+docker network  inspect e22d2706257c
+docker attach centbhai
+docker attach centkumar
+docker ps -a
+docker info
+docker container ls -a
+docker container kill 19e3d4f72817
+docker container rm  19e3d4f72817
+docker container rm  19e3d4f72817 d12773e1cf01
+docker container rm  d12773e1cf01
+docker container ls -a
+docker container rm -f d12773e1cf01
+docker network ls -a
+docker network ls 
+docker network inspect e22d2706257c
+docker container ls
+docker container ls -a
+docker container attach centbhai
+docker run  -itd --name=centkumar --network=kp_network centos
+docker run  -itd centkumar
+docke attach centkumar
+docker attach centkumar
+docker run  --name=centbhai 
+docker run  --name centbhai 
+docker container ls
+docker container ls -a
+docker attch centkumar
+docker container attch centkumar
+docker attach centbhai
+docker start  centbhai
+docker start  centkumar 
+docker network inspect kp_network 
+cleR
+celar
+clear
+celar
+clear
+docker attach centbhai 
+clear
+docker attach centbhai 
+clear
+docker ps
+docker ps -a
+docker start ecstatic_nightingale
+clear
+docker ps -a
+docker container kill d8f45d34984b
+docker ps -a
+docker start ecstatic_nightingale
+docker ps -a
+docker container rm d8f45d34984b
+docker ps -a
+docker stop 151690bd0fd3
+docker stop d9d12b1695e2
+docker ps -a
+clear
+docker ps -a
+docker start centbhai centkumar 
+docker inspect centbhai
+docker inspect centbhai centkumar 
+docker inspect centbhai
+docker inspect centkumar 
+clear
+docker stop centbhai centkumar 
+docker start centbhai centkumar 
+docker inspect centkumar 
+docker stop centbhai centkumar 
+docker start centkumar  centbhai 
+docker inspect centkumar 
+docker inspect centbhai
+docker pull ubuntu
+docker image
+docker images
+docker run -idt --name=ubuntutest --network=kp_network ubuntu sh
+docker inspect ubuntutest 
+docker attach ubuntutest 
+clear
+docker attach centbhai 
+clear
+docker attach ubuntutest 
+clear
+docker inspect ubuntutest 
+docker images
+docker container ls -a
+docker container rm d61eb25ac18c
+docker stop ubuntutest 
+docker container rm d61eb25ac18c
+docker run -idt --name=ubuntutest --network=kp_network ubuntu 
+docker container ls -a
+clear
+docker attach ubuntutest 
+docker container ls -a
+docker container rm fc4584e90de2
+docker stop ubuntutest 
+docker container rm fc4584e90de2
+docker ps
+clear
+docker ps
+docker ps -a
+docker run -itb name=ul ubuntu
+docker run -idt --name=ubuntutest ubuntu 
+docker start ubuntutest
+docker attach ubuntutest 
+docker attach centbhai 
+docker image 
+docker images
+docker container ps 
+docker container stop d4d819336270
+docker rm  d4d819336270
+docker container ps 
+docker stop 151690bd0fd3
+docker network connect --ip 172.18.0.12 docker-network centkumar
+docker start centkumar
+clear
+docker container ps 
+docker container ps -a
+docker network create --driver bridge --subnet 192.168.57.0/24 --gateway 192.168.57.1/24
+docker stop all
+docker stop centbhai 
+docker stop centkumar
+docker network create --driver bridge --subnet 192.168.57.0/24 --gateway 192.168.57.1/24
+docker network create --driver bridge --subnet 192.168.57.0/24 --gateway 192.168.57.1
+docker network create --driver=bridge --subnet 192.168.57.0/24
+docker network create --driver=bridge --subnet 192.168.57.0
+docker network create --driver=bridge --subnet 192.168.57.0/24 --gateway 192.168.57.1
+docker network create --driver=bridge --subnet 192.168.57.0/24 --gateway 192.168.57.1 bro
+docker ps 
+docker ps -a
+docker container start centbhai 
+docker run -ibt --name=centbhai centos
+docker run -it --name=centbhai centos
+docker stop centbhai
+docker stop centkumar
+docker start centkumar
+docker network inspect kp_network 
+docker container start centbhai 
+docker  start centbhai 
+docker network inspect kp_network 
+docker  start centkumar
+docker network ls
+docker exec -it centkumar 
+docker exec --help
+docker exec -idt centkumar centos
+docker network prune 
+docker run --name centkumar -it centos
+docker start centkumar
+docker container rm centbhai 
+docker container rm centkumar 
+history 
+docker ps -a
+docker container ps -a
+docker container ls -a
+docker run -idt --name cent1 --network=kp_network centos
+docker run -idt --name cent2 --network=kp_network centos
+clear
+docker start cent1
+docker start cent2
+docker attach cent1
+clear
+docker container ls
+docker container ls -a
+docker images
+clear
+docker pull wordpress
+mkdir wordpress
+vi docker-compose.yml
+docker stop  cent1 cent2
+clear
+ip a
+nmcli con sh
+ping 192.168.5710
+ping 192.168.57.10
+ping 192.168.57.1
+ping 192.168.57.10
+clear
+docker
+docker network 192.168.57.22/24
+docker network connect --ip 192.168.57.22 bro centbhai 
+docker start centbhai 
+docker attach  centbhai 
+clear
+docker start centkumanr
+docker start centkumar
+docker container ps -a
+docker start centkumar 
+docker network ps -a
+docker network ls
+docker stop centbhai 
+docker network rm bro `
+docker network rm bro 
+docker network ls
+clear
+docker start centbhai
+docker start centkumar
+docker container ps -a
+docker run -idt --name=centbhai centos
+systemctl restart network
+nmcli con sh
+firefox
+init 0
+docker ps
+docker ps 
+history
+docker images
+docker containes pa -a
+docker containes pa 
+docker container ps -a
+docker attach cent1
+docker start cent1
+docker container ps -a
+docker images
+docker attach cent1
+docker ps-a
+docker ps -a
+docker container pa -a
+docker container ps -a
+docker attach cent1
+docker start cent1
+docker start cent2
+docker attach cent1
+docker container ps -a
+docker start cent1
+docker container ps -a
+systemctl status docker
+docker run hello-world
+clear
+docker network inspect 
+docker network inspect all
+docker network ls
+history 
+docker network inspect kp_network
+clear
+docker pa
+docker ps
+docker attach cent1
+docker ps -a
+docker rmi 037a15491ec9
+docker rm 037a15491ec9
+docker rmi 037a15491ec9
+docker ps -a
+docker rm b625828357b2
+clear
+ll
+cd /etc/docker/
+ll
+clear
+cd
+cd /etc/docker/certs.d/
+ll
+clear
+docker run -e WORDPRESS_DB_PASSWORD=root123 -d --name wordpress --link wordpressdb:mysql wordpress
+docker run wordpress
+docker ps
+cd
+mkdir wordpress
+
