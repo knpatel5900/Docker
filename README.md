@@ -12,7 +12,7 @@ To install Docker Engine, you need a maintained version of one of the following 
 Archived versions aren’t supported or tested.
 
 ## Uninstall old versions
-_ _Older versions of Docker went by the names of docker or docker-engine. Uninstall any such older versions before attempting to install a new version, along with associated dependencies:_ _
+_Older versions of Docker went by the names of docker or docker-engine. Uninstall any such older versions before attempting to install a new version, along with associated dependencies:_
 
         sudo yum remove docker \
                   docker-client \
@@ -25,16 +25,18 @@ _ _Older versions of Docker went by the names of docker or docker-engine. Uninst
 
 ## Images, containers, volumes, and networks stored in /var/lib/docker/ aren’t automatically removed when you uninstall Docker.
 
-_ _It’s OK if yum reports that none of these packages are installed.
+_It’s OK if yum reports that none of these packages are installed.
 Images, containers, volumes, and networks stored in /var/lib/docker/ aren’t automatically removed when you uninstall Docker.
 Installation methods
-You can install Docker Engine in different ways, depending on your needs:
-You can set up Docker’s repositories and install from them, for ease of installation and upgrade tasks. This is the recommended approach.
-You can download the RPM package and install it manually and manage upgrades completely manually. This is useful in situations such as installing Docker on air-gapped systems with no access to the internet.
-In testing and development environments, you can use automated convenience scripts to install Docker._ _
+
+_You can install Docker Engine in different ways, depending on your needs:_
+
+_You can set up Docker’s repositories and install from them, for ease of installation and upgrade tasks. This is the recommended approach._
+_You can download the RPM package and install it manually and manage upgrades completely manually. This is useful in situations such as installing Docker on air-gapped systems with no access to the internet._
+_In testing and development environments, you can use automated convenience scripts to install Docker._
   
-##Install using the repository
-Before you install Docker Engine for the first time on a new host machine, you need to set up the Docker repository. Afterward, you can install and update Docker from the repository. </sub>
+**Install using the repository**
+_Before you install Docker Engine for the first time on a new host machine, you need to set up the Docker repository. Afterward, you can install and update Docker from the repository._
   
   
 ## Set up the repository
@@ -57,16 +59,16 @@ This command installs Docker, but it doesn’t start Docker. It also creates a d
 
 _ _Docker provides a convenience script at https://get.docker.com/ to install Docker into development environments non-interactively. The convenience script isn’t recommended for production environments, but it’s useful for creating a provisioning script tailored to your needs. Also refer to the install using the repository steps to learn about installation steps to install using the package repository. The source code for the script is open source, and can be found in the docker-install repository on GitHub._ _
 
-_ _Always examine scripts downloaded from the internet before running them locally. Before installing, make yourself familiar with potential risks and limitations of the convenience script:_ _
+_Always examine scripts downloaded from the internet before running them locally. Before installing, make yourself familiar with potential risks and limitations of the convenience script:_
 
-_ _The script requires root or sudo privileges to run._ _
+_The script requires root or sudo privileges to run._
 
-_ _The script attempts to detect your Linux distribution and version and configure your package management system for you. The script doesn’t allow you to customize most installation parameters._ _
+_The script attempts to detect your Linux distribution and version and configure your package management system for you. The script doesn’t allow you to customize most installation parameters._
 
-_ _The script installs dependencies and recommendations without asking for confirmation. This may install a large number of packages, depending on the current configuration of your host machine._ _
+_The script installs dependencies and recommendations without asking for confirmation. This may install a large number of packages, depending on the current configuration of your host machine._
 
-_ _By default, the script installs the latest stable release of Docker, containerd, and runc. When using this script to provision a machine, this may result in unexpected major version upgrades of Docker. Always test upgrades in a test environment before deploying to your production systems.
-The script isn’t designed to upgrade an existing Docker installation. When using the script to update an existing installation, dependencies may not be updated to the expected version, resulting in outdated versions._ _
+_By default, the script installs the latest stable release of Docker, containerd, and runc. When using this script to provision a machine, this may result in unexpected major version upgrades of Docker. Always test upgrades in a test environment before deploying to your production systems.
+The script isn’t designed to upgrade an existing Docker installation. When using the script to update an existing installation, dependencies may not be updated to the expected version, resulting in outdated versions._
 
 **Tip: preview script steps before running**
 
@@ -79,7 +81,7 @@ The script isn’t designed to upgrade an existing Docker installation. When usi
          sudo sh get-docker.sh
 
 ## Install pre-releases
-_ _Docker also provides a convenience script at https://test.docker.com/ to install pre-releases of Docker on Linux. This script is equal to the script at get.docker.com, but configures your package manager to use the test channel of the Docker package repository. The test channel includes both stable and pre-releases (beta versions, release-candidates) of Docker. Use this script to get early access to new releases, and to evaluate them in a testing environment before they’re released as stable._ _
+_Docker also provides a convenience script at https://test.docker.com/ to install pre-releases of Docker on Linux. This script is equal to the script at get.docker.com, but configures your package manager to use the test channel of the Docker package repository. The test channel includes both stable and pre-releases (beta versions, release-candidates) of Docker. Use this script to get early access to new releases, and to evaluate them in a testing environment before they’re released as stable._
 
 **To install the latest version of Docker on Linux from the test channel, run:**
 
