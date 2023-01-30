@@ -11,17 +11,22 @@ Archived versions aren’t supported or tested.
 
 ## Uninstall old versions
 1. Older versions of Docker went by the names of docker or docker-engine. Uninstall any such older versions before attempting to install a new version, along with associated dependencies:
-**sudo yum remove docker  docker-client docker-client-latest docker-common docker-latest docker-latest-logrotate docker-logrotate docker-engine**                        
+
+**sudo yum remove docker  docker-client docker-client-latest docker-common docker-latest docker-latest-logrotate docker-logrotate docker-engine**  
+
 ## Images, containers, volumes, and networks stored in /var/lib/docker/ aren’t automatically removed when you uninstall Docker.
-<sub>It’s OK if yum reports that none of these packages are installed.</sub>
-<sub> Images, containers, volumes, and networks stored in /var/lib/docker/ aren’t automatically removed when you uninstall Docker.</sub>
-<sub>Installation methods</sub>
-<sub>You can install Docker Engine in different ways, depending on your needs:</sub>
-<sub>You can set up Docker’s repositories and install from them, for ease of installation and upgrade tasks. This is the recommended approach.</sub>
-<sub>You can download the RPM package and install it manually and manage upgrades completely manually. This is useful in situations such as installing Docker on air-gapped systems with no access to the internet.</sub>
-<sub>In testing and development environments, you can use automated convenience scripts to install Docker.</sub>
+
+<sub>It’s OK if yum reports that none of these packages are installed.
+Images, containers, volumes, and networks stored in /var/lib/docker/ aren’t automatically removed when you uninstall Docker.
+Installation methods
+You can install Docker Engine in different ways, depending on your needs:
+You can set up Docker’s repositories and install from them, for ease of installation and upgrade tasks. This is the recommended approach.
+You can download the RPM package and install it manually and manage upgrades completely manually. This is useful in situations such as installing Docker on air-gapped systems with no access to the internet.
+<sub>In testing and development environments, you can use automated convenience scripts to install Docker.
 ##Install using the repository
-<sub>Before you install Docker Engine for the first time on a new host machine, you need to set up the Docker repository. Afterward, you can install and update Docker from the repository. </sub>
+Before you install Docker Engine for the first time on a new host machine, you need to set up the Docker repository. Afterward, you can install and update Docker from the repository. </sub>
+  
+  
 ##Set up the repository
 Install the yum-utils package (which provides the yum-config-manager utility) and set up the repository.
 
