@@ -42,3 +42,38 @@ Install the yum-utils package (which provides the yum-config-manager utility) an
         sudo yum install -y yum-utils
         sudo yum-config-manager \
                         --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+                        
+
+To install the latest version, run:
+
+        sudo yum install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+        
+If prompted to accept the GPG key, verify that the fingerprint matches 060A 61C5 1B55 8A7F 742B 77AA C52F EB6B 621E 9F35, and if so, accept it.
+This command installs Docker, but it doesn’t start Docker. It also creates a docker group, however, it doesn’t add any users to the group by default.
+
+## Start Docker Service
+
+        sudo systemctl start docker
+        
+Verify that Docker Engine installation is successful by running the hello-world image.
+
+## Enable Docker Service
+
+         sudo systemctl enable docker
+
+## Stop Docker Service
+
+         sudo systemctl enable docker
+         
+## Uninstall Docker Engine
+Uninstall the Docker Engine, CLI, containerd, and Docker Compose packages: 
+
+        sudo yum remove docker-ce docker-ce-cli containerd.io docker-compose-plugin docker-ce-rootless-extras
+        
+Images, containers, volumes, or customized configuration files on your host are not automatically removed. To delete all images, containers, and volumes:
+
+        sudo rm -rf /var/lib/docker
+        sudo rm -rf /var/lib/containerd
+        
+You must delete any edited configuration files manually.
+        
