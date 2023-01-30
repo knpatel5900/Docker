@@ -12,7 +12,7 @@ Archived versions aren’t supported or tested.
 ## Uninstall old versions
 1. Older versions of Docker went by the names of docker or docker-engine. Uninstall any such older versions before attempting to install a new version, along with associated dependencies:
 
-## sudo yum remove docker \
+        sudo yum remove docker \
                   docker-client \
                   docker-client-latest \
                   docker-common \
