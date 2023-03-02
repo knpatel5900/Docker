@@ -1,0 +1,107 @@
+docker system events
+
+
+Get real time events from the server
+
+Usage
+
+ docker system events [OPTIONS]
+Refer to the options section for an overview of available OPTIONS for this command.
+
+Description
+Use docker system events to get real-time events from the server. These events differ per Docker object type.
+
+Object types
+Containers
+Docker containers report the following events:
+
+attach
+commit
+copy
+create
+destroy
+detach
+die
+exec_create
+exec_detach
+exec_die
+exec_start
+export
+health_status
+kill
+oom
+pause
+rename
+resize
+restart
+start
+stop
+top
+unpause
+update
+Images
+Docker images report the following events:
+
+delete
+import
+load
+pull
+push
+save
+tag
+untag
+Plugins
+Docker plugins report the following events:
+
+install
+enable
+disable
+remove
+Volumes
+Docker volumes report the following events:
+
+create
+mount
+unmount
+destroy
+Networks
+Docker networks report the following events:
+
+create
+connect
+disconnect
+destroy
+Daemons
+Docker daemons report the following events:
+
+reload
+Limiting, filtering, and formatting the output
+Limit events by time
+The --since and --until parameters can be Unix timestamps, date formatted timestamps, or Go duration strings (e.g. 10m, 1h30m) computed relative to the client machine’s time. If you do not provide the --since option, the command returns only new and/or live events. Supported formats for date formatted time stamps include RFC3339Nano, RFC3339, 2006-01-02T15:04:05, 2006-01-02T15:04:05.999999999, 2006-01-02Z07:00, and 2006-01-02. The local timezone on the client will be used if you do not provide either a Z or a +-00:00 timezone offset at the end of the timestamp. When providing Unix timestamps enter seconds[.nanoseconds], where seconds is the number of seconds that have elapsed since January 1, 1970 (midnight UTC/GMT), not counting leap seconds (aka Unix epoch or Unix time), and the optional .nanoseconds field is a fraction of a second no more than nine digits long.
+
+Filtering (--filter)
+The filtering flag (-f or --filter) format is of “key=value”. If you would like to use multiple filters, pass multiple flags (e.g., --filter "foo=bar" --filter "bif=baz")
+
+Using the same filter multiple times will be handled as a OR; for example --filter container=588a23dac085 --filter container=a8f7720b8c22 will display events for container 588a23dac085 OR container a8f7720b8c22
+
+Using multiple filters will be handled as a AND; for example --filter container=588a23dac085 --filter event=start will display events for container container 588a23dac085 AND the event type is start
+
+The currently supported filters are:
+
+container (container=<name or id>)
+daemon (daemon=<name or id>)
+event (event=<event action>)
+image (image=<tag or id>)
+label (label=<key> or label=<key>=<value>)
+network (network=<name or id>)
+plugin (plugin=<name or id>)
+type (type=<container or image or volume or network or daemon or plugin>)
+volume (volume=<name or id>)
+For example uses of this command, refer to the examples section below.
+
+Options
+Name, shorthand	Default	Description
+--filter , -f		Filter output based on conditions provided
+--format		Format the output using the given Go template
+--since		Show all events created since timestamp
+--until		Stream events until this timestamp
