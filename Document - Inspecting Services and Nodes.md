@@ -1,0 +1,9 @@
+# Inspecting a Service
+
+    docker service inspect demotroubleshoot
+    docker service inspect demotroubleshoot --pretty
+    
+# Inspecting a Node
+
+    docker node inspect swarm01 
+    docker node inspect swarm01 -pretty
